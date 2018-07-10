@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ContactClient</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+
+  <body>
+    <a href="/client/contacts">Home</a>
+    <a href="/client/contacts/new">New Contact</a>
+    
+    <% flash.each do |name, message| %>
+      <p><%= message %></p>
+    <% end %>
+    
+    <%= yield %>
+  </body>
+</html>

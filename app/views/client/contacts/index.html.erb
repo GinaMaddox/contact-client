@@ -1,0 +1,10 @@
+<% @contacts.each do |contact| %>
+  <p> id: <%= contact['id']%></p>
+  <p> First Name: <%= contact['first_name']%></p>
+  <p> Middle Name: <%= contact['middle_name']%></p>
+  <p> Last Name: <%= contact['last_name']%></p>
+  <p> Email: <%= contact['email']%></p>
+  <p> Phone Number: <%= contact['phone_number']%></p>
+  <p> Bio: <%= contact['bio']%></p>
+  <hr>
+<% end %>
