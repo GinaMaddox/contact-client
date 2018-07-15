@@ -12,6 +12,11 @@
   <body>
     <a href="/client/contacts">Home</a>
     <a href="/client/contacts/new">New Contact</a>
+    <a href="/client/signup">Sign Up</a>
+    <a href="/client/login">Log In</a>
+    <a href="/client/logout" data-method="delete">Log Out</a>
+    <%= @jwt %>
+
     
     <% flash.each do |name, message| %>
       <p><%= message %></p>

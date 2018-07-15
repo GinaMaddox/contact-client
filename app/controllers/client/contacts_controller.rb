@@ -17,7 +17,8 @@ class Client::ContactsController < ApplicationController
         last_name: params[:last_name],
         email: params[:email],
         phone_number: params[:phone_number],
-        bio: params[:bio]
+        bio: params[:bio],
+        
       })
     flash[:success] = "New contact successfully created"
     redirect_to "/client/contacts"
